@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fox {
+    position: fixed;
+    top: 240px;
+    right: 0;
+}
+
+/* 盒子控制方向，图片控制大小 */
+
+.fox img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.header {
+    height: 42px;
+    width: 1200px;
+    margin: 30px auto;
+    /* background-color: blueviolet; */
+}
+
+.logo {
+    float: left;
+    height: 42px;
+    width: 198px;
+}
+
+.header .nav {
+    float: left;
+    height: 42px;
+    margin-left: 70px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+.nav ul li:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.nav ul li a {
+    /* 依靠padding值将其撑大 */
+    margin: 10px;
+    font-size: 18px;
+    line-height: 42px;
+    color: #050505;
+}
+
+.nav ul a:hover {
+    color: #00a4ff;
+}
+
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    /* background-color: brown; */
+    margin-left: 50px;
+}
+
+.header .search input {
+    /* 给input直接指定大小 */
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: none;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.header .search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    background-image: url(images/fa-search.png);
+    border: none;
+}
+
+.header .user {
+    float: left;
+    height: 42px;
+    margin-left: 55px;
+}
+
+.header .user .zsy {
+    float: left;
+    /* width: 32px;
+    height: 32px; */
+    margin-top: 5px;
+    /* 带图片的盒子设置行高不能其位置 */
+    /* line-height: 42px; */
+}
+
+.header .user .zsy img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.header .user .zsyqq {
+    float: left;
+    line-height: 42px;
+    font-size: 14px;
+    color: #797979;
+    margin-left: 6px;
+}
+
+/* 这里是banner */
+
+.banner {
+    height: 421px;
+    background-color: #1c036c;
+}
+
+.banner .center {
+    width: 1200px;
+    height: 421px;
+    margin: 0 auto;
+    /* 这两种方法均可以设置居中背景 */
+    background: url(images/banner-image.png) no-repeat center top;
+    /* background-position: center top; */
+}
+
+.banner .center .subnav {
+    float: left;
+    width: 190px;
+    height: 421px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.subnav ul li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+
+.subnav ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.subnav ul li a span {
+    float: right;
+}
+
+/* 这里的a标签与>是在一起的同时设定就行 */
+
+.subnav ul li a:hover {
+    color: #00a4ff;
+}
+
+/* 这里是课程表 */
+
+.center .course {
+    z-index: 4;
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+    float: right;
+    margin-top: 50px;
+    /* 浮动的盒子不会有外边距合并的问题 */
+    border-radius: 12px;
+}
+
+.center .course h4 {
+    height: 48px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #00359f;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 12px 12px 0 0;
+}
+
+.center .course ul {
+    width: 190px;
+    padding: 14px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.center .course ul .first {
+    font-size: 16px;
+    font-weight: 700;
+    color: #5f5f5f;
+}
+
+.center .course ul .last {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.center .course a {
+    display: inline-block;
+    width: 190px;
+    height: 38px;
+    margin: 5px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00359f;
+    text-align: center;
+    line-height: 38px;
+    border: 1px solid #00359f;
+    border-radius: 12px;
+}
+
+.goods {
+    width: 1200px;
+    height: 60px;
+    margin: 8px auto;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+    /* background-color: blueviolet; */
+}
+
+.goods h4 {
+    float: left;
+    line-height: 60px;
+    padding: 0 32px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.goods ul li {
+    float: left;
+}
+
+/* 让盒子浮动，内部的内容与字体的大小是一样的 */
+
+.goods ul li a {
+    line-height: 60px;
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+    border-left: 1px solid #bfbfbf;
+}
+
+.goods ul .last {
+    float: right;
+}
+
+.goods ul .last a {
+    line-height: 60px;
+    padding: 0 30px;
+    font-size: 14px;
+    color: #00a4ff;
+    border-left: none;
+}
+
+.box-hd {
+    width: 1200px;
+    height: 60px;
+    margin: 14px auto 0;
+    background-color: #f3f5f7;
+}
+
+.box-hd h4 {
+    float: left;
+    font-size: 20px;
+    line-height: 60px;
+    color: #494949;
+}
+
+.box-hd span {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-right: 30px;
+    margin-top: 28px;
+}
+
+.box {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 一个盒子用于居中，一个盒子用于放东西，可以在控制方位的情况下，是东西放好 */
+
+.box ul {
+    width: 1225px;
+}
+
+.box ul li {
+    position: relative;
+    float: left;
+    width: 230px;
+    height: 270px;
+    background-color: white;
+    margin: 0 15px 15px 0;
+}
+
+.box ul li .photo {
+    /* 将图片的宽度改为100%,可以更好的放下 */
+    width: 100%;
+}
+
+.box ul li em {
+    position: absolute;
+    top: 4px;
+    right: -4px;
+}
+/* 使用伪类选择器 */
+.box ul li:nth-child(5n) {
+    margin-right: 0;
+}
+
+.box ul li p {
+    margin: 22px 24px 15px;
+    font-size: 14px;
+}
+
+.box ul li .hot {
+    margin-left: 24px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.box ul .hot .rank {
+    color: #ff7c2d;
+}
+
+.footer {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .footer-left {
+    float: left;
+}
+
+.footer .logo {
+    float: none;
+    display: inline-block;
+    margin: 34px 0 25px 0;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #666666;
+    margin: 0 0 16px 0;
+}
+
+.footer .download {
+    display: inline-block;
+    font-size: 16px;
+    width: 118px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+}
+
+.footer ul {
+    float: right;
+    margin-top: 38px;
+    margin-left: 100px;
+}
+
+.footer ul .title {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.footer ul li a {
+    font-size: 12px;
+    color: #333333;
+}
+
+.foot {
+    background-color: white;
+    height: 415px;
+}

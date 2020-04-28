@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            float: left;
+            perspective: 500px;
+            width: 120px;
+            height: 32px;
+            margin: 30px;
+            list-style: none;
+        }
+
+        li .box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            line-height: 32px;
+            text-align: center;
+            color: red;
+            font-size: 20px;
+            font-weight: 700;
+            transform-style: preserve-3d;
+            transition: all .4s ease;
+        }
+
+        li .box:hover {
+            transform: rotateX(90deg);
+        }
+
+        .box div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .box .front {
+            background-color: purple;
+            z-index: 1;
+            /* 往前移动 */
+            transform: translateZ(16px);
+        }
+
+        .box .bottom {
+            background-color: yellow;
+            /* 在这里必须先设置它的移动才可以在设置旋转，有先后顺序 */
+            transform: translateY(16px) rotateX(-90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <div class="box">
+                <div class="front">小郑</div>
+                <div class="bottom">宝</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">小郑</div>
+                <div class="bottom">贝</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">小郑</div>
+                <div class="bottom">郑</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">小郑</div>
+                <div class="bottom">思</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">小郑</div>
+                <div class="bottom">雅</div>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>

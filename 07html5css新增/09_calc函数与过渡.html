@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            /* 设置过渡动画，与hover搭配使用 */
+            /* 可以同时设置，也可以使用all */
+            /* ease 延迟时间 */
+            transition: width 0.5s, height 0.5s;
+        }
+
+        .box:hover {
+            width: 400px;
+            height: 400px;
+            background-color: darkgreen;
+        }
+
+        .son {
+            /* 使用calc函数可以做一些简单的计算 */
+            width: calc(100% - 30px);
+            height: 100px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

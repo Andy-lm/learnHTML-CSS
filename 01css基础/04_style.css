@@ -1,0 +1,9 @@
+/* 这里是外部样式表 */
+        p {
+            text-align: center;
+            font: normal 700 35px "宋体";
+            background-color: red;
+            color: #000;
+            text-decoration: underline;
+        }
+ 

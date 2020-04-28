@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 定义一个动画 */
+        /* 动画序列 */
+        @keyframes rotate {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(1000px, 0) rotate(360deg);
+            }
+
+            50% {
+                transform: translate(1000px, 500px);
+            }
+
+            75% {
+                transform: translate(0, 500px) rotate(360deg);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            /* 使用一个动画 */
+            /* 1.先确定动画名 */
+            animation-name: rotate;
+            /* 2.确定持续时间 */
+            animation-duration: 10s;
+            /* 3.确定运动曲线 */
+            animation-timing-function: linear;
+            /* 4.确定循环次数 */
+            /* animation-iteration-count: infinite; */
+            /* 5.规定在运动完动画是否逆向返回初始位置 */
+            animation-direction: alternate;
+            /* 6.动画运动完成后，在当前位置停住，不返回初始位置 */
+            animation-fill-mode: forwards;
+            /* 7.确定延迟时间 */
+            animation-delay: 2s;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

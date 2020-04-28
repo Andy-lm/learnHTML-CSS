@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            overflow: hidden;
+            width: 0;
+            height: 30px;
+            margin: 50px auto;
+            background-color: red;
+            color: yellow;
+            font-weight: 700;
+            font-size: 20px;
+            /* 强制在一行内显示 */
+            white-space: nowrap;
+            animation: w 2s steps(4) forwards;
+        }
+
+        @keyframes w {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 80px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>李茂牛逼</div>
+</body>
+
+</html>

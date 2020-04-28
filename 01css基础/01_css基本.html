@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选择器{样式} */
+        /* 标签选择器 */
+        p {
+            color: grey;
+        /* 修改了文字大小为50像素 */
+            font-size: 50px;
+            font-family: 'Microsoft Yahei' ;
+        }
+        /* 类选择器： 样式点·定义，结构类调用class*/
+        .red {
+            
+            background-color: red;
+        }
+        .green {
+            
+            background-color: green;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            font-size: 35px;
+        }
+        /* id选择器：样式#定义，结构id调用,只能调用一次，不能重复调用 */
+        #first {
+            font-size: 35px;
+            color: red;
+        }
+        #second {
+            font-size: 15px;
+            color: green;
+        }
+        /* 设置字体加粗，默认为正常 */
+        .bold{
+            font-weight: 700;
+            /* font-weight: bold;这两句的作用一样 */
+        }
+        .font_normal{
+            font-weight: 400;
+            /* font-weight: normal;这两句效果一样 */
+        }
+        .font_style{
+            /* 设置斜体 */
+            font-style: italic;
+        }
+        em {
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="font_normal">字体设置</h1>
+    <p class="font_style">这应该是灰色</p>
+    <p id="first">这是一个段落</p>
+    <p id="second">这是第二个段落</p>
+    <h2><em>这是一个倾斜的字体</em></h2>
+    <ul>
+        <li class="bold">香蕉</li>
+        <li>苹果</li>
+    </ul>
+    <!-- 使用class进行类的调用，也可以设定多类名 -->
+    <div class="green box">绿色</div>
+    <div class="red box">红色</div>
+    <div class="green box">绿色</div>
+    <div class="red box">红色</div>
+</body>
+</html>

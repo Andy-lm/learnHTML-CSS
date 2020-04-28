@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="xxx.php" method="GET">
+        <!--text:输入任意文本-->
+        请输入您的姓名：<input type="text" name="name" value="您的姓名"> <br />
+        <!--password:输入密码 maxlength:可以限制输入字符的最大长度 -->
+        密码：<input type="password"name="pwd" maxlength="6"> 最多6位<br />
+        <!--radio:定义单选框,必须要添加相同的name属性才可以进行多选一-->
+        性别：男<input type="radio" name="gender"value="男">女<input type="radio" name="gender"value="女"> <br />
+        <!--checkbox:定义多选框 checked:可以定义必选框-->
+        爱好：吃饭 <input type="checkbox" name="hobby"value="吃饭"> 睡觉<input type="checkbox" name="hobby"value="睡觉"> 
+        打豆豆<input type="checkbox"name="hobby"value="打豆豆" checked="checked"> 必选打豆豆<br /> 
+        <!--一般表单元素都要求拥有name与value属性-->
+        <!--submit为提交按钮，可以根据不同的value值进行设定按钮内容,点击后会把表单域里面对应的name与value值发送到后台-->
+        <input type="submit" value="提交信息">
+        <!--重置按钮-->
+        <input type="reset" value="重新填写"><br>
+        <!-- 普通按钮 button后期结合js使用 -->
+        <input type="button" value="普通按钮"><br>
+        <!-- 上传按钮，用于上传文件使用 -->
+        上传头像：<input type="file">
+        
+    </form>
+</body>
+</html>

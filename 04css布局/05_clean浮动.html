@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            /* height: 300px; */
+            background-color: teal;
+            margin: 50px auto;
+            /* overflow: hidden;清除浮动 */
+        }
+
+        .box:after {
+            /* 此方法为最常用的清除浮动的方法 */
+            content: "";
+            display: block;
+            /* 这里的高度设不设置都可以 */
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .box {
+            zoom: 1;
+        }
+
+        .box .ming {
+            width: 60px;
+            height: 50px;
+            background-color: yellow;
+            margin-bottom: 10px;
+            float: left;
+        }
+
+        /* .box .clear {
+            clear: both;
+        } 在末尾添加一个盒子清除其浮动用来撑大体积*/
+
+        .last {
+            width: 500px;
+            height: 500px;
+            background-color: yellowgreen;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="ming"></div>
+        <div class="ming"></div>
+        <div class="ming"></div>
+        <div class="ming"></div>
+        <div class="ming"></div>
+        <!-- <div class="clear"></div> -->
+    </div>
+    <div class="last"></div>
+</body>
+
+</html>

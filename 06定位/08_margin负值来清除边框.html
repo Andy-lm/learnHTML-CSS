@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            position: relative;
+            float: left;
+            width: 100px;
+            height: 200px;
+            border: 1px solid green;
+            list-style: none;
+            /* 利用margin的负值巧妙删除边框 */
+            margin-left: -1px;
+        }
+
+        /* li:hover {
+            1.当没有添加定位时
+            position: relative;
+            border: 1px solid red;
+        } */
+        li:hover {
+            /* 改变其层级 */
+            border: 1px solid red;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>

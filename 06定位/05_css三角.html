@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            background-color: springgreen;
+
+        }
+
+        .sanjiao {
+            position: absolute;
+            top: 20px;
+            right: -20px;
+            width: 0;
+            height: 0;
+            /* font-size: 0;
+            line-height: 0;兼容性问题，照顾低版本浏览器 */
+            border: 10px solid transparent;
+            border-left-color: springgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="sanjiao"></div>
+    </div>
+
+</body>
+
+</html>

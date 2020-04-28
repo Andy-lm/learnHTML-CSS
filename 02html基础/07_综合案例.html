@@ -1,0 +1,104 @@
+<!-- 确定版本号为html5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合案例演练</title>
+    <style>
+        .h2_center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="h2_center" >青春不常在，抓紧谈恋爱</h2><br>
+    <table width="600" align="center">
+        <tr>
+            <td>性别</td>
+            <td>
+                <input type="radio" name="gender"id="man"><label for="man"><img src="images/man.jpg" alt="出现了某种问题图片无法显示">男</label>
+                <input type="radio" name="gender"id="woman"><label for="woman"><img src="images/man.jpg" alt="出现了某种问题图片无法显示">女</label>
+            </td>
+        </tr>
+        <tr>
+            <td>生日</td>
+            <td>
+                <select>
+                    <option>--请选择年--</option>
+                    <option>1998</option>
+                    <option>1999</option>
+                </select>
+                <select>
+                    <option>--请选择月--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <select>
+                    <option>--请选择日--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>所在地区</td>
+            <td><input type="text" value="默认北京" name="location"></td>
+        </tr>
+        <tr>
+            <td>婚姻状况</td>
+            <td>
+                <input type="radio" name="hunfou" checked="checked" id="hunfou1"><label for="hunfou1">未婚</label>
+                <input type="radio" name="hunfou"id="hunfou2"><label for="hunfou2">已婚</label>
+                <input type="radio" name="hunfou"id="hunfou3"><label for="hunfou3">离婚</label>
+            </td>
+        </tr>
+        <tr>
+            <td>学历</td>
+            <td><input type="text" value="本科"></td>
+        </tr>
+        <tr>
+            <td>喜欢的类型</td>
+            <td>
+                <input type="checkbox" name="love">性感的
+                <input type="checkbox"name="love">温柔的
+                <input type="checkbox"name="love">妩媚的
+                <input type="checkbox"name="love">御姐型
+                <input type="checkbox"name="love">萝莉型
+                <input type="checkbox" name="love"checked="checked">都喜欢
+            </td>
+        </tr>
+        <tr>
+            <td><label for="demo">自我介绍</label></td>
+            <td><textarea name="abstract" id="demo" cols="50" rows="3">请概括一下你的主要经历...</textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="免费注册"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="yes" checked="checked">我同意注册条款和会员加入标准</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><a href="#">我是会员，立即登录</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <h3>我承诺</h3>
+                <ul>
+                    <li>年满18岁、单身</li>
+                    <li>抱着严肃的态度</li>
+                    <li>寻找另一半</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

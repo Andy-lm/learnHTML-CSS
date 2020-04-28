@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* 添加透视 */
+            perspective: 500px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin: 50px auto;
+            /* 过渡 */
+            transition: all 1s linear;
+        }
+
+        div:hover {
+            /* 设置旋转 */
+            /* 沿着X轴顺时针旋转45度 */
+            /* 旋转的复合写法 */
+            /* 沿着X,Y轴的矢量旋转 */
+            transform: rotate3d(1, 1, 0, 45deg)
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

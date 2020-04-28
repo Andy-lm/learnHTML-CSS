@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        input {
+            /* 删除掉蓝色默认边框 */
+            outline: none;
+            width: 50px;
+            height: 25px;
+            border: 1px solid green;
+        }
+
+        textarea {
+            border: 1px solid green;
+            outline: none;
+            /* 清除拖拽 */
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li style="cursor: default;">默认</li>
+        <li style="cursor: pointer;">小手</li>
+        <li style="cursor: move;">移动</li>
+        <li style="cursor: text;">文本</li>
+        <li style="cursor: not-allowed;">禁止</li>
+        <li>未设置</li>
+    </ul>
+    <!-- 删除掉蓝色默认边框 -->
+    <input type="text">
+    <!-- 删除拖拽 -->
+    <textarea name="" id="" cols="30" rows="10" style="vertical-align: middle;">请输入留言...</textarea> 哈哈哈哈
+    <!-- 只针对行内元素与行内块元素与文字的位置 -->
+</body>
+
+</html>

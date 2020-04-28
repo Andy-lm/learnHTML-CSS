@@ -1,0 +1,264 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin: 10px 0 0 220px;
+}
+
+/* 海报模块 */
+
+.main .focus {
+    float: left;
+    width: 721px;
+    height: 100%;
+}
+
+/* 右侧新闻模块 */
+
+.main .newsflash {
+    float: right;
+    width: 250px;
+    height: 100%;
+}
+
+.main .newsflash .news {
+    height: 165px;
+    width: 100%;
+    border: 1px solid #E4E4E4;
+}
+
+.newsflash .news .new_hd {
+    width: 100%;
+    height: 33px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #E4E4E4;
+    line-height: 33px;
+}
+
+.newsflash .news .new_hd .new_le {
+    float: left;
+    font-size: 14px;
+}
+
+.newsflash .news .new_hd .new_ri {
+    float: right;
+}
+
+.newsflash .news .new_hd .new_ri a::after {
+    content: '\e920';
+    font-family: 'icomoon';
+}
+
+.newsflash .news .new_bd {
+    padding: 5px 15px 0;
+}
+
+/* 设置超出的部分用省略号 */
+
+.newsflash .news .new_bd li {
+    overflow: hidden;
+    height: 24px;
+    line-height: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.main .newsflash .lifeservice {
+    overflow: hidden;
+    height: 208px;
+    width: 100%;
+    border: 1px solid #E4E4E4;
+    border-top: 0;
+}
+
+/* 当ul中的li标签无法装下时，往往可以采用将ul标签将行进行扩大以装下 */
+
+.main .newsflash .lifeservice ul {
+    width: 252px;
+}
+
+.main .newsflash .lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    /* background-color: yellow; */
+    border-right: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+    text-align: center;
+}
+
+/* 拥有溢出隐藏故不需要考虑边框重叠问题 */
+
+/* .main .newsflash .lifeservice ul li:nth-child(4n) {
+    border-right: 0;
+} */
+
+.main .newsflash .lifeservice ul li i {
+    /* position: absolute; */
+    /* left: 50%; */
+    /* margin-left: -12px; */
+    /* 行内块元素可以使用对应的文本居中命令 */
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    margin-left: 1px;
+    background: url(../images/icons.png) no-repeat -19px -15px;
+}
+
+.main .newsflash .bargain {
+    margin-top: 6px;
+}
+
+/* 推荐模块 */
+
+.recom {
+    height: 163px;
+    margin-top: 12px;
+    background-color: #EBEBEB;
+}
+
+.recom .recom_hd {
+    float: left;
+    width: 205px;
+    height: 100%;
+    padding-top: 30px;
+    background-color: #5C5251;
+    text-align: center;
+}
+
+.recom .recom_dd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom .recom_dd ul li:nth-child(-n+3)::after {
+    content: '';
+    /* position: absolute; */
+    /* top: 10px; */
+    /* right: 0; */
+    width: 1px;
+    height: 145px;
+    margin-top: 10px;
+    background-color: #dddddd;
+}
+
+/* 楼层区模块 */
+
+/* 楼层区标题 */
+
+.floor .box {
+    margin-top: 30px;
+}
+
+.floor .box .box_hd {
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    border-bottom: 2px solid #C81623;
+}
+
+.floor .box .box_hd h3 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #C81623;
+}
+
+.floor .box .box_hd .tab_list {
+    float: right;
+}
+
+.floor .box .box_hd .tab_list ul li {
+    float: left;
+}
+
+.floor .box .box_hd .tab_list ul li a {
+    margin: 0 15px;
+}
+
+/* 使用结构伪类选择器改变颜色 */
+
+.tab_list ul li:nth-child(1) a {
+    color: #C81623;
+}
+
+/* .floor .box .box_hd .tab_list ul li a::before {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    content: '';
+    display: inline-block;
+    height: 12px;
+    width: 1px;
+    background-color: #666666;
+} */
+
+/* 楼层区内容 */
+
+.box_bd {
+    height: 361px;
+    /* background-color: turquoise; */
+}
+
+.box_bd .tab_list_items {
+    width: 1220px;
+}
+
+.box_bd .col_210 {
+    float: left;
+    width: 210px;
+    height: 100%;
+    text-align: center;
+}
+
+.box_bd .col_210 ul {
+    margin-left: 15px;
+}
+
+.box_bd .col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    margin-right: 10px;
+    border-bottom: 1px solid #cccccc;
+    line-height: 34px;
+}
+
+.box_bd .col_329 {
+    float: left;
+    width: 329px;
+}
+
+.box_bd .col_221 {
+    overflow: hidden;
+    float: left;
+    width: 221px;
+    height: 361px;
+    border-right: 1px solid #cccccc;
+}
+
+.box_bd .col_221 .to_221 {
+    float: left;
+    display: block;
+    width: 100%;
+    height: 181px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.box_bd .col_221 .bo_221 {
+    float: left;
+    display: block;
+}
+
+.box_bd .col_219 {
+    float: left;
+    width: 219px;
+}
+
+.box_bd .col_219 .to_219 {
+    float: left;
+    display: block;
+    width: 100%;
+    height: 181px;
+    border-bottom: 1px solid #cccccc;
+}

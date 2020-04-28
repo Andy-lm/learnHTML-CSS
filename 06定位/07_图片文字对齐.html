@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            /* 一行文字一般分为四条线 */
+            /* baseline基线 top顶线 middle中线 bottom底线 */
+            vertical-align: bottom;
+        }
+
+        div {
+            width: 80px;
+            height: 60px;
+            border: 1px solid green;
+            /* 行内元素省略的三个条件 */
+            /* 强制一行 */
+            white-space: nowrap;
+            /* 溢出隐藏 */
+            overflow: hidden;
+            /* 添加省略 */
+            text-overflow: ellipsis;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/tb.jpg" alt="">pink是大哥
+    <div>此处省略一万字</div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+/* 秒杀logo */
+
+.header .sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    padding-top: 3px;
+    padding-left: 14px;
+    border-left: 1px solid #C81523;
+}
+
+/* 秒杀模块导航栏 */
+
+.nav .sk_list ul li {
+    float: left;
+}
+
+.nav .sk_list ul li a {
+    /* 行内元素转换为块元素目的是为了使其拥有宽度 */
+    display: block;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    line-height: 47px;
+}
+
+.nav .sk_con ul li {
+    float: left;
+}
+
+.nav .sk_con ul li a {
+    display: block;
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+.nav .sk_con ul li:last-child a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+
+.nav .sk_con ul li:nth-child(2) a {
+    color: #C81523;
+}
+
+/* 秒杀模块商品部分 */
+
+.sk_bd {
+    width: 1220px;
+    overflow: hidden;
+}
+
+.sk_bd ul li {
+    /* 使图片插入后边框刚刚好放下 */
+    overflow: hidden;
+    float: left;
+    width: 290px;
+    height: 460px;
+    margin-right: 13px;
+    /* 目的为了使鼠标悬停时内容不改变大小 */
+    border: 1px solid transparent;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #B1181A;
+}

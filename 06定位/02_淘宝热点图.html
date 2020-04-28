@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘宝热点图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .promo {
+            /* 记得要给盒子大小，否则无法进行对应的相对定位与绝对定位 */
+            /* 相对定位盒子不脱离标准流，故其居中可以直接设置 */
+            position: relative;
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+        }
+
+        /* 当一个盒子既有左也有右方向时首先执行左边的指令 */
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            text-align: center;
+            width: 20px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 0 15px 15px 0;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 15px 0 0 15px;
+        }
+
+        .nav {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            width: 70px;
+            height: 13px;
+            margin-left: -35px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 6.5px;
+        }
+
+        .nav li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 3px;
+        }
+
+        /* 只有文字才可以行高，与文本相关命令 */
+        .nav .first {
+            background-color: #FF5000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="promo">
+        <img src="images/tb.jpg" alt="4#@$#@4">
+        <a href="#" class="prev">&lt;</a>
+        <a href="#" class="next">&gt;</a>
+        <ul class="nav">
+            <li class="first"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

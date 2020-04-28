@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        li {
+            list-style: none;
+            text-align: centers;
+        }
+
+        ul li:first-child {
+            color: blue;
+        }
+
+        ul li:last-child {
+            color: chartreuse;
+        }
+
+        ul li:nth-child(2) {
+            color: cyan;
+        }
+
+        /* even代表偶数 */
+        ul li:nth-child(even) {
+            background-color: gray;
+        }
+
+        /* odd代表奇数 */
+        ul li:nth-child(odd) {
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>第1个</li>
+        <li>第2个</li>
+        <li>第3个</li>
+        <li>第4个</li>
+        <li>第5个</li>
+        <li>第6个</li>
+        <li>第7个</li>
+        <li>第8个</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- label标签 -->
+        <label for="name">用户名：</label><input type="text" id="name"><br>
+            性别：<label for="man">男</label><input type="radio" id="man" name="gender">
+            <label for="woman">女</label><input type="radio" id="woman"name="gender"><br>
+            籍贯：
+            <!-- 这个是下拉标签，通过selected标签可以设置默认下拉属性 -->
+        <select>
+            <option>山东</option>
+            <option>上海</option>
+            <option selected="selected">其他</option>
+        </select><br><br>
+        <!-- textarea文本域标签 -->
+        <label for="textarea">留言板:</label><br>
+        <textarea name="liuyan" id="textarea" cols="30" rows="10">请输入您想说的话...</textarea>
+    </form> 
+</body>
+</html>

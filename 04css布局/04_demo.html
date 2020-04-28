@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 100%;
+        }
+
+        .big {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            /* 浮动的盒子不占位置，当上方为标准流盒子时，浮动的盒子将跟在标准流盒子的下方 */
+        }
+
+        .little {
+            width: 330px;
+            height: 200px;
+            background-color: tomato;
+        }
+
+        .ming {
+            width: 500px;
+            height: 500px;
+            /* 浮动流留在了标准流的上方 */
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big">
+        <div class="box"></div>
+    </div>
+    <div class="little"></div>
+    <div class="ming"></div>
+</body>
+
+</html>

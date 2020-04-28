@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 只选择属性为文本的，选择出来 */
+        input[type=text] {
+            /* 属性选择器并且值为text */
+            color: blueviolet;
+            outline: none;
+        }
+
+        input[type=button] {
+            border: none;
+            background-color: crimson;
+            outline: none;
+            cursor: pointer;
+            color: white;
+            font-weight: 700;
+
+        }
+
+        div {
+            font-weight: 700;
+        }
+
+        /* 选择值开头 */
+        div[class^=l] {
+            color: yellow;
+        }
+
+        /* 选择值结尾 */
+        div[class$=y] {
+            color: blue;
+        }
+
+        /* 选择值带有 */
+        div[class*=c] {
+            color: crimson;
+        }
+
+        div[id] {
+            color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <input type="password">
+    <input type="button" value="注册">
+    <div class="lmm">lmm</div>
+    <div class="zsy">zsy</div>
+    <div class="c">m</div>
+    <div id="">id</div>
+</body>
+
+</html>

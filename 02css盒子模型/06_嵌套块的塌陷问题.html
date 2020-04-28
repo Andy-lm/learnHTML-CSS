@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fa {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            margin-top: 60px;
+            margin-left: 60px;
+            /* border: 1px solid transparent;
+            padding: 1px; */
+            overflow: hidden;
+            /* 这三种方法可以解决边框塌陷的问题，分别为加上边框，加内边距与使用overflow:hidden; */
+        }
+
+        .so {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 30px 30px;
+
+        }
+
+        span {
+            margin-left: 20px;
+            margin-right: 20px;
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="fa">
+        <div class="so">
+
+        </div>
+    </div>
+    <span>行内元素只设置左右内外边距</span>
+</body>
+
+</html>

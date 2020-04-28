@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 500px;
+        }
+
+        .box {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 50px auto;
+            background-color: blue;
+            /* 让父类呈现3d样式 */
+            transform-style: preserve-3d;
+            transition: all 1s;
+            animation: rotate 2s linear infinite;
+        }
+
+        .box:hover {
+            animation-play-state: paused;
+            /* transform: rotateY(45deg); */
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateX(0);
+            }
+
+            100% {
+                transform: rotateX(-360deg);
+            }
+        }
+
+        .box div {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: chartreuse;
+        }
+
+        .box div:first-child {
+            background-color: chocolate;
+            transform: rotateX(60deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

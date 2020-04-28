@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* css3盒子模型 */
+    box-sizing: border-box;
+}
+
+/* 让斜体字体变正常 */
+
+em, i {
+    font-style: normal
+}
+
+/* 去除li标签的原点 */
+
+li {
+    list-style: none
+}
+
+img {
+    /* 照顾低版本浏览器图片外有链接会出现边框 */
+    border: 0;
+    /* 去除图片底部间隙 */
+    vertical-align: middle
+}
+
+button {
+    /* 让指到按钮时鼠标变成手 */
+    cursor: pointer
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+
+button, input {
+    /* 用编码显示宋体 */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    border: 0;
+    outline: none;
+}
+
+body {
+    /* css3文字抗锯齿，让文字显示更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+.hide, .none {
+    display: none
+}
+
+/* 清除浮动，伪元素 */
+
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}

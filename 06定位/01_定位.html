@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 使某盒子固定在版心的边缘 */
+        /* 使用固定定位 */
+        .box {
+            width: 600px;
+            height: 3000px;
+            background-color: blueviolet;
+            margin: 50px auto;
+        }
+
+        .left-box {
+
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            top: 200px;
+            left: 50%;
+            margin-left: 305px;
+            background-color: chartreuse;
+        }
+
+        .nianxing {
+            /* 粘性定位，必须且只能拥有方位的其中一个才可以 */
+            position: sticky;
+            top: 20px;
+            width: 200px;
+            height: 50px;
+            margin: 50px 0 0 -300px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="nianxing"></div>
+    </div>
+    <div class="left-box"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 让其旋转-45度便可 */
+            /* 也可以用伪元素选择器加在盒子的后面，使用定位控制位置 */
+            width: 10px;
+            height: 10px;
+            margin: 50px auto;
+            border-width: 0 2px 2px 0;
+            border-color: red;
+            border-style: solid;
+            transform: rotate(-45deg);
+            transition: all .2s;
+        }
+
+        div:hover {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
